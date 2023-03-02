@@ -15,15 +15,15 @@
 }
 
 .logo {
-  position: absolute;
   height: 32px;
   width: 228px;
-  z-index: 3;
 }
 
 .logo_place_header {
+  position: absolute;
   top: 30px;
   left: 64px;
+  z-index: 3;
   background-image: url(/images/logo_place_header.svg);
 }
 
@@ -241,4 +241,60 @@
   height: 877px;
   width: 877px;
   z-index: 1;
+}
+
+.footer {
+  background-color: #000000;
+  padding: 60px 0 40px 0;
+}
+
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 711px;
+  margin: auto;
+  width: 90%;
+  min-height: 350px;
+  color: #ffffff;
+}
+
+.footer__column_content_copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.logo_place_footer {
+  background-image: url(/images/logo_place_footer.svg);
+}
+
+.footer__author {
+  margin: 18px 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column-heading {
+  margin-bottom: 20px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column-link {
+  margin-bottom: 16px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer__column_content_social {
+  display: flex;
+  flex-direction: column;
 }
