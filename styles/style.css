@@ -6,7 +6,6 @@
 }
 
 .header {
-  --normalize: 0;
   display: flex;
   position: relative;
   height: 100vh;
@@ -42,7 +41,7 @@
   position: absolute;
   bottom: 30px;
   left: 64px;
-  margin: var(--normalize);
+  margin: 0;
   width: 388px;
   z-index: 2;
   line-height: 25px;
@@ -53,6 +52,14 @@
 .header__link {
   color: #2f80ed;
   text-decoration: none;
+}
+
+.link_opacity {
+  transition: opacity 1s linear 0;
+}
+
+.link_opacity:hover {
+  opacity: 0.4;
 }
 
 .header__main-illustration {
@@ -84,7 +91,6 @@
 }
 
 .two-columns {
-  --normalize: 0;
   display: flex;
   justify-content: space-between;
   margin: auto;
@@ -93,7 +99,7 @@
 
 .two-columns__brief {
   flex-shrink: 0;
-  margin: var(--normalize);
+  margin: 0;
   width: 175px;
   line-height: 1.2;
   font-size: 18px;
@@ -111,7 +117,7 @@
 }
 
 .two-columns__paragraph {
-  margin: var(--normalize);
+  margin: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -147,7 +153,6 @@
 }
 
 .table {
-  --normalize: 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -164,14 +169,14 @@
 }
 
 .table__heading {
-  margin: var(--normalize);
+  margin: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
 }
 
 .table__text {
-  margin: 20px var(--normalize) var(--normalize) var(--normalize);
+  margin: 20px 0 0 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -256,7 +261,6 @@
 }
 
 .footer {
-  --normalize: 0;
   display: flex;
   box-sizing: border-box;
   justify-content: center;
@@ -291,7 +295,7 @@
 }
 
 .footer__column-heading {
-  margin: var(--normalize) var(--normalize) 20px var(--normalize);
+  margin: 0 0 20px 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
