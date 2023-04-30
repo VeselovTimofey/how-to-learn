@@ -1,3 +1,12 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .page {
   min-width: 1100px;
   max-width: 1600px;
@@ -12,6 +21,7 @@
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
+  overflow: hidden;
 }
 
 .logo {
@@ -79,6 +89,7 @@
   height: 568px;
   width: 568px;
   background-color: #2f80ed;
+  animation: rotation 20s linear infinite;
 }
 
 .content {
@@ -125,6 +136,79 @@
 
 .two-columns__span-accent {
   font-weight: 600;
+}
+
+.techniques {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 920px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.cards__item:nth-of-type(3) {
+  margin-right: 0;
+}
+
+.cards__item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}
+
+.cards__image {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  margin: 60px 40px 43px 40px;
+}
+
+.cards__title {
+  margin: 0 0 16px 0;
+  width: 240px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.cards__description {
+  margin: 0;
+  width: 240px;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.video__iframes {
+  display: flex;
+  position: relative;
+  top: 50px;
+}
+
+.video__iframe:first-child {
+  margin-right: 20px;
+}
+
+.oakley {
+  padding-top: 160px;
+  background-color: #f2f2f2;
 }
 
 .digits {
@@ -185,6 +269,7 @@
 .feynman {
   min-height: 890px;
   position: relative;
+  padding-top: 100px;
   background-image: url(../images/feynman.png);
   background-size: 867px 637px;
   background-repeat: no-repeat;
@@ -218,6 +303,73 @@
   font-size: 36px;
   font-weight: normal;
   text-decoration: none;
+}
+
+.khan {
+  display: flex;
+  padding-top: 105px;
+  background-color: #f2f2f2;
+}
+
+.khan__container {
+  width: 80%;
+  margin: auto;
+}
+
+.khan__author {
+  margin: 0;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.khan__title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.khan__quote {
+  width: 790px;
+  margin: 50px 0 36px 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.khan__quote-author {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.khan__quote-author-subline {
+  margin: 10px 0 68px 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.khan__book-container {
+  display: flex;
+}
+
+.khan__book-pic {
+  height: 608px;
+  width: 620px;
+  overflow: hidden;
+  margin-right: 48px;
+}
+
+.khan__buy-link {
+  align-self: flex-start;
+  color: #2f80ed;
+  text-decoration: none;
+  line-height: 42px;
+  font-size: 24px;
+  font-weight: normal;
 }
 
 .kaufman {
@@ -258,6 +410,29 @@
   width: 877px;
   background-size: 100%;
   background-image: url(../images/kaufman-triangle.svg);
+  animation: rotation 20s linear infinite;
+}
+
+.resources {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 217px;
+}
+
+.resources__logo-zone {
+  display: flex;
+  justify-content: center;
+  width: 1100px;
+  margin: 80px auto 0 auto;
+}
+
+.resources__link {
+  display: flex;
+  justify-content: center;
+  width: 270px;
+  height: 38px;
 }
 
 .footer {
