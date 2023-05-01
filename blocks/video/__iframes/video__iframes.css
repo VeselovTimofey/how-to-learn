@@ -1,10 +1,8 @@
 .video__iframes {
   display: flex;
   position: relative;
+  list-style-type: none;
   top: 50px;
-  border: 0;
-}
-
-.video__iframe:first-child {
-  margin-right: 20px;
+  margin: 0;
+  padding: 0;
 }
